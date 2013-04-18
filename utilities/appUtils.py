@@ -31,9 +31,10 @@ def main(
             "Invalid options for --loglevel: %s" % (
                 options.loglevel))
 
-        with closing(
-            logUtils.initialiseLogging(
-                logUtils.getLoggingConfig(options))):
-            mainMethod(options, args, parser)
+    with closing(
+        logUtils.initialiseLogging(
+            logUtils.getLoggingConfig(options))):
+
+        mainMethod(options, args, parser)
 
     return
