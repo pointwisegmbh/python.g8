@@ -1,10 +1,9 @@
 #!/usr/bin/python
 import sys
-sys.path.append('utilities/')
 
 import logging
 
-import appUtils
+import utils.appUtils as appUtils
 
 def usageString():
     return '%prog: Insert usage instructions here'
