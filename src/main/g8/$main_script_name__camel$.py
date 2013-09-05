@@ -6,21 +6,21 @@ import logging
 import utils.appUtils as appUtils
 
 def usageString():
-    return '%prog: Insert usage instructions here'
+    return '%prog: $usage_instructions$'
 
 def versionString():
     return '%prog: 1.0'
 
 def appSetOpts(parser):
     # add your app specific options here,
-    # run ./pythonSkeletonApp.py -h for the default options
+    # run ./$main_script_name;format="camel"$.py -h for the default options
 
     return
 
 def main(options, args, parser):
 
     # Your app starts here
-    logging.info("Hello World!")    
+    logging.info("Hello World!")
 
     return
 
