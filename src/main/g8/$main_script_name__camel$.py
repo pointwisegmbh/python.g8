@@ -1,28 +1,36 @@
-#!/usr/bin/python
-import sys
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import logging
+import argparse
+import $name;format="word"$
 
-import utils.appUtils as appUtils
 
-def usageString():
-    return '%prog: $usage_instructions$'
+LOGGER = logging.getLogger(__name__)
 
-def versionString():
-    return '%prog: 1.0'
 
-def appSetOpts(parser):
-    # add your app specific options here,
-    # run ./$main_script_name;format="camel"$.py -h for the default options
+def main(cmd_args):
+    pass
 
-    return
-
-def main(options, args, parser):
-
-    # Your app starts here
-    logging.info("Hello World!")
-
-    return
 
 if __name__ == '__main__':
-    appUtils.main(usageString, versionString, appSetOpts, main)
+    LOGGER.info("Start")
+
+    parser = argparse.ArgumentParser(description='$desc$')
+
+    parser.add_argument('--config', required=False,
+                        help="Config file")
+
+    parser.add_argument('--debug', required=False, help="Debug mode",
+                        default=False)
+
+
+    cmd_args = parser.parse_args()
+
+    debug = cmd_args.debug
+    if debug:
+        logging.basicConfig(level=logging.DEBUG)
+    else:
+        logging.basicConfig(level=logging.INFO)
+
+    main(cmd_args)
