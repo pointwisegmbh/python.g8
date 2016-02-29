@@ -21,9 +21,8 @@ if __name__ == '__main__':
     parser.add_argument('--config', required=False,
                         help="Config file")
 
-    parser.add_argument('--debug', required=False, help="Debug mode",
+    parser.add_argument('--debug', required=False, help="Debug mode", action="store_true",
                         default=False)
-
 
     cmd_args = parser.parse_args()
 
