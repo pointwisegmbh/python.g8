@@ -3,13 +3,14 @@
 
 import logging
 import argparse
+import json
 import $name;format="word"$
 
 
 LOGGER = logging.getLogger(__name__)
 
 
-def main(cmd_args):
+def main(conf):
     pass
 
 
@@ -32,4 +33,9 @@ if __name__ == '__main__':
     else:
         logging.basicConfig(level=logging.INFO)
 
-    main(cmd_args)
+    conf = {}
+
+    with open(cmd_args.config) as json_file:
+        conf = json.load(json_file)
+
+    main(conf)
