@@ -10,6 +10,13 @@ See the generated `README.md` for more usage instructions.
 
 This template uses [**Giter8**] [giter8] to fill out default values in the cabal project file.
 
+## Using Giter8
+
+This template can be downloaded with the command (assuming `~/bin` is added to your path):
+
+    g8 pointwisegmbh/python.g8
+
+
 ## Installing Giter8
 
 Detailed instructions for installing **Giter8** can be found [**here**] [giter8-install].
@@ -21,12 +28,6 @@ But for **UNIX**y systems the following will suffice:
     g8
 
 This will install `cs` and `g8` in `~/bin`
-
-## Using Giter8
-
-This template can be downloaded with the command (assuming `~/bin` is added to your path):
-
-    g8 vlaskinvlad/python.g8
 
 [giter8]: https://github.com/n8han/giter8 "n8han/giter8 on github.com"
 [giter8-install]: https://github.com/n8han/giter8/blob/master/README.markdown#installation "Installation instructions for Giter8"
