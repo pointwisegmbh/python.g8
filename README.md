@@ -2,6 +2,8 @@
 
 An empty **Python** project.
 
+With base Docker container and basic Makefile.
+
 See the generated `README.md` for more usage instructions.
 
 # Giter8
@@ -24,7 +26,7 @@ This will install `cs` and `g8` in `~/bin`
 
 This template can be downloaded with the command (assuming `~/bin` is added to your path):
 
-    g8 loki256/python.g8
+    g8 vlaskinvlad/python.g8
 
 [giter8]: https://github.com/n8han/giter8 "n8han/giter8 on github.com"
 [giter8-install]: https://github.com/n8han/giter8/blob/master/README.markdown#installation "Installation instructions for Giter8"

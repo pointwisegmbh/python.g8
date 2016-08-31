@@ -1,6 +1,12 @@
 # $name$
 
-$main_script_name;format="camel"$.py: $usage_instructions$
+## Make commands list 
 
-Run `$main_script_name;format="camel"$.py --help`
-for more details about its usage and command line options.
+| Command | Action
+| ------------- |  ------------- 
+| test | Run tests 
+| docker | Build docker
+| tag | Tag docker container with 2 tags (latest and 7-digit hash)
+| push| Push Docker container to the repository 
+| run | Start docker container locally
+| stop| Stop docker container
